@@ -2,7 +2,7 @@ import 'package:civiceye/View/LoginScreen/LoginScreen.dart';
 import 'package:civiceye/View/SplashScreen/SplashScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'View/BottomNavigation/BottomNavigation.dart';
+
 import 'View/ProfileFormScreen/ProfileFormScreen.dart';
 import 'View/SignUpScreen/SignUpScreen.dart';
 

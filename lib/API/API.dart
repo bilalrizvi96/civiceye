@@ -1,18 +1,14 @@
 import 'dart:collection';
+
 // import 'dart:html';
 
 import 'package:civiceye/API/BaseUrl.dart';
-import 'package:civiceye/Controller/AddNewContactController.dart';
 import 'package:civiceye/Models/NaturalDisastersModel.dart';
 import 'package:civiceye/Models/ProfileModel.dart';
 import 'package:civiceye/View/BottomNavigation/BottomNavigation.dart';
 import 'package:civiceye/View/LoginScreen/LoginScreen.dart';
-import 'package:civiceye/View/NaturalDisastersScreen/NaturalDisastersScreen.dart';
-import 'package:civiceye/View/ProfilePageScreen/ProfilePageScreen.dart';
-import 'package:civiceye/View/ReportOfficer/ReportOfficer.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
@@ -33,7 +29,7 @@ class API {
     Map<String, dynamic> hashmap = new HashMap();
     hashmap['email'] = email.toString();
     hashmap['name'] = name.toString();
-    hashmap['mobile_no'] = mobile_no.toString();
+    hashmap['mobile_no'] = "+"+mobile_no.toString();
     hashmap['address'] = address.toString();
     hashmap['confirm_pass'] = confirm_pass.toString();
     hashmap['password'] = password.toString();
